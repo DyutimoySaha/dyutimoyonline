@@ -36,4 +36,4 @@ var contactDetail={
   }
   emailjs.send('service_tcrfqi8','template_bi2r7od',contactDetail)
   alert("sending email");
-})
+});
