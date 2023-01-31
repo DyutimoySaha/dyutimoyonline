@@ -11,13 +11,7 @@
 	background-size: cover;
 	background-position: center;
 }
-.main{
-	height: 100%;
-	width: 100%;
-	background-image: url(./bg.jpeg);
-	background-size: cover;
-	background-position: center;
-}
+
 nav{
 	display: flex;
 	align-items: center;
@@ -119,11 +113,11 @@ h4{
 .about{
 	width: 100%;
 	padding: 100px 0px;
-	background-color: #191919;
+	background-image: url(bg.jpeg);
 }
 .about img{
-	height: auto;
-	width: 430px;
+	height: 70%;
+	width: 270px;
 }
 .about-text{
 	width: 550px;
@@ -173,12 +167,12 @@ button:hover{
 }
 
 .service{
-	background: #101010;
+	background-image:url(./bg.jpeg) ;
 	width: 100%;
 	padding: 100px 0px;
 }
 .title h2{
-	color: black;
+	color: white;
 	font-size: 75px;
 	width: 1130px;
 	margin: 30px auto;
@@ -189,6 +183,23 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
+}
+.Project{
+	background-image:url(./bg.jpeg) ;
+	width: 100%;
+	padding: 100px 0px;
+}
+.Project h2{
+	color: wheat;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box-container{
+	background-image:url(./bg.jpeg) ;
+	width: 100%;
+	padding: 100px 0px;
 }
 .card{
 	height: 365px;
@@ -376,58 +387,4 @@ footer p:nth-child(2){
 		padding: 1.5rem 2rem;
 
 	}
-}
-
-.theme-toggler{
-    position: fixed;
-    top:10rem; right:-20rem;
-    background: #333;
-    z-index: 1000;
-    width: 20rem;
-    text-align: center;
-}
-
-.theme-toggler.active{
-    right:0;
-}
-
-.theme-toggler h3{
-    color:#fff;
-    padding:1rem 0;
-    font-size: 2rem;
-}
-
-.theme-toggler .buttons{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap:1rem;
-    padding:1rem;
-}
-
-.theme-toggler .buttons .theme-btn{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.theme-toggler .toggle-btn{
-    position: absolute;
-    top:0; left:-5.9rem;
-    padding:1.3rem 1.5rem;
-    background:#333;
-    cursor: pointer;
-}
-
-.theme-toggler .toggle-btn i{
-    color:#fff;
-    font-size: 3rem;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0%{
-        transform: rotate(36deg);
-    }
 }
