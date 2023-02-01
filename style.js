@@ -8,9 +8,9 @@ menu.onclick = () =>{
 let themeToggler = document.querySelector('.theme-toggler');
 let toggleBtn = document.querySelector('.toggle-btn');
 
-toggleBtn.onclick = () =>{
-  themeToggler.classList.toggle('active');
-}
+// toggleBtn.onclick = () =>{
+//   themeToggler.classList.toggle('active');
+// }
 
 window.onscroll = () =>{
   menu.classList.remove('fa-times');

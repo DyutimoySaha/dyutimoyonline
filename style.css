@@ -7,9 +7,12 @@
 .hero{
 	height: 100vh;
 	width: 100%;
-	background-image: url(./bg.jpeg);
+	/* background-image: url(./bg.jpeg); */
 	background-size: cover;
-	background-position: center;
+	/* background-position: center; */
+}
+body{
+	background-image:url(./bg.jpeg);
 }
 
 nav{
@@ -76,7 +79,7 @@ h2{
 h3{
 	color: white;
 	font-size: 25px;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 h4{
 	color: #fcfc;
@@ -113,9 +116,10 @@ h4{
 .about{
 	width: 100%;
 	padding: 100px 0px;
-	background-image: url(bg.jpeg);
+	/* background-image: url(bg.jpeg); */
 }
 .about img{
+	border-radius: 150rem;
 	height: 70%;
 	width: 270px;
 }
@@ -152,7 +156,7 @@ h4{
 }
 button{
 	background-color:#f9004d;
-	color: white;
+	color: red;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -167,7 +171,7 @@ button:hover{
 }
 
 .service{
-	background-image:url(./bg.jpeg) ;
+	/* background-image:url(./bg.jpeg) ; */
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -178,14 +182,21 @@ button:hover{
 	margin: 30px auto;
 	text-align: center;
 }
-.box{
+.box1{
+	padding: 10px;
+
+}
+.box2{
+	align-items: center;
+	padding: 50px;
+	margin: 40px;
+	border-radius: 100rem;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	min-height: 400px;
 }
 .Project{
-	background-image:url(./bg.jpeg) ;
+	/* background-image:url(./bg.jpeg) ; */
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -197,7 +208,8 @@ button:hover{
 	text-align: center;
 }
 .box-container{
-	background-image:url(./bg.jpeg) ;
+	/* background-image:url(./bg.jpeg) ; */
+	align-items: center;
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -366,17 +378,22 @@ footer p:nth-child(2){
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:#FFD4D4;
 }
 
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
-@media (max-width:768px){
+@media (max-width:468px){
 
     #menu-btn{
         display: inline-block;
     }
+	.c{
+		display: flex;
+		justify-content: center;
+		/* margin: auto; */
+	}
 }
 @media (max-width:991px)
 {
