@@ -24,10 +24,9 @@ document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
     let color = btn.style.background;
     document.querySelector(':root').style.setProperty('--main-color', color);
   }
-
 });
-document.getElementById("submit").addEventListener('click',(e)=>{
-  e.preventDefault();
+
+document.getElementById("submit").addEventListener('click',(e)=>{e.preventDefault();
  var userid = "lbrM71-nZ-_Rs7oGC";
  emailjs.init(userid);
 var email=document.getElementById('mail').value
@@ -35,5 +34,16 @@ var contactDetail={
   formEmail:email
   }
   emailjs.send('service_tcrfqi8','template_bi2r7od',contactDetail)
-  alert("sending email");
+  alert("Email sent");
+});
+
+  document.getElementById("done").addEventListener('click',(e)=>{ e.preventDefault();
+   var userid = "lbrM71-nZ-_Rs7oGC";
+   emailjs.init(userid);
+  var email=document.getElementById('submit').value
+  var contactDetail={
+    formEmail:email
+    }
+    emailjs.send('service_tcrfqi8','template_bi2r7od',contactDetail)
+    alert("Email sent");
 });
