@@ -18,7 +18,7 @@ body{
 nav{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding-top: 45px;
 	padding-left: 8%;
 	padding-right: 8%;
@@ -112,7 +112,59 @@ h4{
 	top: 6px;
 	right: 6px; 
 }
+/* Skills */
 
+.my-skill {
+    margin: 2 0px 40px 15px 40px;
+    padding-top: 50px;
+  }
+/* .my-skill .title{ */
+
+/* 	} */
+  .row .skill-row {
+	display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 0 10px;
+	
+  }
+  
+  .skill-div {
+	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s;
+  }
+  .skill-div:hover {
+    transform: scale(1.1);
+  }
+  .skill {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: white;
+    /* width: 20rem; */
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 5px 3px white;
+  }
+  .skill img {
+	width: 55px;
+
+	height: 55px;
+  }
+  .skill h4{
+	display: block;
+	justify-content: space-between;
+	color: #000;
+	text-align: justify;
+  }
+  #skill1{
+	display: flex;
+  } 
 .about{
 	width: 100%;
 	padding: 100px 0px;
@@ -447,6 +499,7 @@ footer p:nth-child(2){
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+/* resposive */
 @media (max-width:468px){
 
     #menu-btn{
@@ -457,8 +510,16 @@ footer p:nth-child(2){
 		justify-content: center;
 		/* margin: auto; */
 	}
+	.my-skill {
+		margin-left: 30px;
+		margin-right: 30px;
+	  }
+	  .skill img {
+		width: 50px;
+		height: 50px;
+	  }
 }
-@media (max-width:991px)
+@media (max-width:870px)
 {
 	html{
 		font-size: 55%;
@@ -467,4 +528,16 @@ footer p:nth-child(2){
 		padding: 1.5rem 2rem;
 
 	}
+	.my-skill {
+		margin-left: 30px;
+		margin-right: 30px;
+	  }
+
+	  .skill h4 {
+		font-size: 18px;
+	  }
+	  .skill img {
+		width: 20px;
+		height: 20px;
+	  }
 }
